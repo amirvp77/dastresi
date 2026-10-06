@@ -1,0 +1,721 @@
+{
+  "title": [
+    {
+      "id": 1,
+      "title": "فروشگاه اینترنتی دسترسی"
+    }
+  ],
+  "header": [
+    {
+      "id": 1,
+      "name": "باشگاه مشتریان"
+    },
+    {
+      "id": 2,
+      "name": "بلاگ"
+    },
+    {
+      "id": 3,
+      "name": "ارتباط ما"
+    },
+    {
+      "id": 4,
+      "name": "درباره ما"
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "خانه"
+    },
+    {
+      "id": 2,
+      "name": "لوازم جانبی موبایل و کامپیوتر",
+      "dropdown": [
+        {
+          "id": 1,
+          "name": "کابل شارژ",
+          "dropdown": [
+            {
+              "id": 1,
+              "name": "کابل شارژ میکرو یو اس بی"
+            },
+            {
+              "id": 2,
+              "name": "کابل شارژ تایپ سی"
+            },
+            {
+              "id": 3,
+              "name": "کابل شارژ لایتینگ"
+            },
+            {
+              "id": 4,
+              "name": "کابل شارژ دو سر تایپ سی"
+            },
+            {
+              "id": 5,
+              "name": "کابل شارژ تایپ سی به لاینتینگ"
+            },
+            {
+              "id": 6,
+              "name": "کابل شارژ سه کاره"
+            },
+            {
+              "id": 7,
+              "name": "کابل شارژ سامسونگ"
+            },
+            {
+              "id": 8,
+              "name": "کابل شارژ آیفون"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "هولدر و نگهدارنده"
+        },
+        {
+          "id": 3,
+          "name": "تجهیزات ذخیره سازی" ,
+          "dropdown": [
+            {
+              "id": 1,
+              "name": " فلش مموری"
+            },
+            {
+              "id": 2,
+              "name": "کارت حافظه"
+            },
+            {
+              "id": 3,
+              "name": "هارد اکسترنال"
+            }]
+        },
+        {
+          "id": 4,
+          "name": "هندزفری و هدست، میکروفون",
+          "dropdown": [
+            {
+              "id": 1,
+              "name": " میکروفن"
+            },
+            {
+              "id": 2,
+              "name": "هندزفری سیم دار"
+            },
+            {
+              "id": 3,
+              "name": "هدست سیم دار"
+            } ,
+            {
+              "id": 4,
+              "name": "هدفون بلوتوث"
+            } ,
+            {
+              "id": 5,
+              "name": " هندزفری بلوتوثی"
+            } ,
+            {
+              "id": 6,
+              "name": "هندزفری بلوتوث دور گردنی"
+            } ,
+            {
+              "id": 7,
+              "name": "هندزفری بلوتوث تک گوش"
+            } 
+          ]
+        },
+        {
+          "id": 5,
+          "name": "پاوربانک",
+          "dropdown": [
+            {
+              "id": 1,
+              "name": " جامپ استاکر"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "اسپیکر"
+        },
+        {
+          "id": 7,
+          "name": "ماوس و کیبورد و پد موس"
+        },
+        {
+          "id": 8,
+          "name": "آداپتور و شارژر",
+          "dropdown": [
+            {
+              "id": 1,
+              "name": " شارژر دیواری"
+            },
+            {
+              "id": 2,
+              "name": "شارژر وایرلس"
+            },
+            {
+              "id": 3,
+              "name": "شارژر رومیزی"
+            } ,
+            {
+              "id": 4,
+              "name": "شارژر فندکی"
+            } ,
+            {
+              "id": 5,
+              "name": "شارژر سامسونگ"
+            } ,
+            {
+              "id": 6,
+              "name": "شارژر آیفون"
+            } 
+          ]
+        },
+        {
+          "id": 9,
+          "name": "دسته بازی و خنک کننده موبایل"
+        },
+        {
+          "id": 10,
+          "name": "انواع تبدیل برق"
+        },
+        {
+          "id": 11,
+          "name": "کابل و دانگل انتقال تصویر"
+        },
+        {
+          "id": 12,
+          "name": "هاب تایپ سی و یو اس بی"
+        },
+        {
+          "id": 13,
+          "name": "فن خنک کننده کامپیوتر"
+        },
+        {
+          "id": 14,
+          "name": "قاب و گلس"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "کابل - مبدل - رابط",
+      "dropdown": [
+        {
+          "id": 1,
+          "name": " کابل پرینتر"
+        },
+        {
+          "id": 2,
+          "name": " کابل اکسترال"
+        },
+        {
+          "id": 3,
+          "name": " کابل انواع تبدیل"
+        },
+        {
+          "id": 4,
+          "name": " کابل AUX"
+        },
+        {
+          "id": 5,
+          "name": " کابل 2 به 1 صدا"
+        },
+        {
+          "id": 6,
+          "name": " کابل اپتیکال"
+        },
+        {
+          "id": 7,
+          "name": " کابل و فیش OTG"
+        },
+        {
+          "id": 8,
+          "name": " کابل HDMI"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "لوازم تولید محتوا",
+      "dropdown": [
+        {
+          "id": 1,
+          "name": "میکروفون"
+        },
+        {
+          "id": 2,
+          "name": "رینگ لایت و پایه"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "لوازم شبکه",
+      "dropdown": [
+        {
+          "id": 1,
+          "name": "مودم - روتر"
+        },
+        {
+          "id": 2,
+          "name": "هاب شبکه"
+        },
+        {
+          "id": 3,
+          "name": "مودم همراه"
+        },
+        {
+          "id": 4,
+          "name": "لوازم جانبی"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "کنسول بازی و لوازم جانبی",
+      "dropdown": [
+        {
+          "id": 1,
+          "name": "دسته بازی"
+        },
+        {
+          "id": 2,
+          "name": "هندزفری و هدست"
+        },
+        {
+          "id": 3,
+          "name": "موس و کیبورد"
+        },
+        {
+          "id": 4,
+          "name": "کیف"
+        },
+        {
+          "id": 5,
+          "name": " کنسول"
+        },
+        {
+          "id": 6,
+          "name": "شارژ دسته بازی "
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "لوازم خانگی و شخصی",
+      "dropdown": [
+        {
+          "id": 1,
+          "name": " انواع گچت های جذاب"
+        },
+        {
+          "id": 2,
+          "name": " ماشین اصلاح سر و صورت"
+        },
+        {
+          "id": 3,
+          "name": " باتری و شارژر",
+          "dropdown": [
+            {
+              "id": 1,
+              "name": " باتری آلکالاین"
+            },
+            {
+              "id": 2,
+              "name": "باتری ساده"
+            },
+            {
+              "id": 3,
+              "name": "باتری شارژی"
+            } ,
+            {
+              "id": 4,
+              "name": "شارژر باتری"
+            } ,
+            {
+              "id": 5,
+              "name": "باتری سکه ای"
+            } 
+          ]
+        },
+        {
+          "id": 4,
+          "name": " اندروید باکس و گیرنده دیجیتال",
+          "dropdown": [
+            {
+              "id": 1,
+              "name": " ابزار"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": " مچ بند و ساعت هوشمند"
+        },
+        {
+          "id": 6,
+          "name": " محصولات کمبو"
+        },
+        {
+          "id": 7,
+          "name": " اف ام پلیر"
+        },
+        {
+          "id": 8,
+          "name": " رابط برق و USB"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "برندها"
+    }
+  ],
+  "slider": [
+    {
+      "id": 1,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/08/02/cool-dastresi.jpg"
+    },
+    {
+      "id": 2,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/05/23/banner-somsung--dastresi-banner.jpg"
+    },
+    {
+      "id": 3,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/06/30/mib10-dastresi-desk%20(1).jpg"
+    },
+    {
+      "id": 4,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/06/28/leb-5%20(2).jpg"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": " پاوربانک 20 هزار 22.5 واتی مک دودو با کابل متصل مدل Mcdodo MC-8530 ",
+      "oldPrice": "6,300,000",
+      "discount": "500,000",
+      "price": "5,800,000",
+      "image": "https://www.dastresi.com/upload/filemanager/2026/05/07/15532208-dastresi-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": " پاوربانک 10000 میلی آمپر 45 واتی با کابل متصل تایپ سی مک دودو مدل Mcdodo MC-5920 ",
+      "oldPrice": "5,380,000",
+      "discount": "400,000",
+      "price": "4,980,000",
+      "image": "https://www.dastresi.com/upload/filemanager/2026/01/28/mcdodo-592-11.jpg"
+    },
+    {
+      "id": 3,
+      "name": " پاوربانک 10000 میلی آمپری 30 واتی وایرلس شارژ مگ سیف qi2 مدل Vision پاورولوژی Powerology PPB20910BK&nbsp",
+      "oldPrice": "8,500,000",
+      "discount": "1,110,000",
+      "price": "7,390,000",
+      "image": "https://www.dastresi.com/upload/filemanager/2025/11/25/powerology-10kmag-11.jpg"
+    },
+    {
+      "id": 4,
+      "name": "هدزفری بلوتوثی دورگردنی اکستروم مدل Axtrom ANBST13",
+      "oldPrice": "1,890,000",
+      "discount": "500,000",
+      "price": "1,390,000",
+      "image": "https://www.dastresi.com/upload/filemanager/2025/08/19/AXTROM-ANBST12-.jpg"
+    },
+    {
+      "id": 5,
+      "name": " لامپ 9W حبابی اضطراری شارژی EDC ",
+      "oldPrice": ",994,000",
+      "discount": "300,000",
+      "price": "5,800,000",
+      "image": "https://www.dastresi.com/upload/filemanager/2026/08/29/edc-11.jpg"
+    }
+  ],
+  "slideItem": [
+    {
+      "id": 1,
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/cable.png"
+    },
+    {
+      "id": 2,
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/handsfree.png"
+    },
+    {
+      "id": 3,
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/mobadel%20o%20rabet.png"
+    },
+    {
+      "id": 4,
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/battery.png"
+    },
+    {
+      "id": 5,
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/gaming.png"
+    },
+    {
+      "id": 6,
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/adaptor.png"
+    },
+    {
+      "id": 7,
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/powerbank.png"
+    },
+    {
+      "id": 8,
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/powerbank.png"
+    }
+  ],
+  "offer": [
+    {
+      "id": 1,
+      "name": " انواع گچت های جذاب",
+      "title": " چراغ خواب پروژکتوری کهکشانی گرین ل... ",
+      "image": "https://www.dastresi.com/upload/filemanager/2026/06/21/greeen-2222.jpg" ,
+      "price":""
+    },
+    {
+      "id": 2,
+      "name": " انواع گچت های جذاب",
+      "title": " هولدر وکیوم چرخش 360 درجه مک دودو ... ",
+      "image": "https://www.dastresi.com/upload/filemanager/2026/02/23/MCDODO-8420-11.jpg" ,
+      "price":"2,200,000"
+    },
+    {
+      "id": 3,
+      "name": " انواع گچت های جذاب",
+      "title": " ساعت هوشمند مک دودو مدل Mcdodo IW-... ",
+      "image": "https://www.dastresi.com/upload/filemanager/2026/02/23/mcdodo-757-11.jpg" ,
+      "price":"6,500,000"
+    },
+    {
+      "id": 4,
+      "name": " انواع گچت های جذاب",
+      "title": " جامپ استارتر و پمپ باد 15200 میلی ... ",
+      "image": "https://www.dastresi.com/upload/filemanager/2026/02/22/PORO4KARE-111.jpg" ,
+      "price":"18,500,000"
+    },
+    {
+      "id": 5,
+      "name": " انواع گچت های جذاب",
+      "title": " رابط برق 4 خانه 10 متری پرودو مدل ... ",
+      "image": "https://www.dastresi.com/upload/filemanager/2026/02/15/PORODO10M-11.jpg" ,
+      "price":""
+    },
+    {
+      "id": 6,
+      "name": " انواع گچت های جذاب",
+      "title": " پمپ باد گرین INFLATOR مدل Green Li... ",
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/12/POMP-GREEN-11.jpg" ,
+      "price":"4,900,000"
+    },
+    {
+      "id": 7,
+      "name": " انواع گچت های جذاب",
+      "title": " اسپیکر بلوتوثی انکر سلکت 4 گو 5 وا... ",
+      "image": "https://www.dastresi.com/upload/filemanager/2026/06/27/GO4ANKER-11.jpg" ,
+      "price":""
+    },
+    {
+      "id": 8,
+      "name": " انواع گچت های جذاب",
+      "title": " پنکه دستی Windix گرین لاین مدل Gre... ",
+      "image": "https://www.dastresi.com/upload/filemanager/2026/06/28/PANKE-WIN-11.jpg" ,
+      "price":"1,690,000"
+    }
+  ],
+  "dastresi": [
+    {
+      "id": 1,
+      "image": "https://www.dastresi.com/images/icons/icon2.png",
+      "name": "مشاوره تخصصی برای خرید محصول",
+      "des": " برای خرید هر محصول با تیم دسترسی در ارتباط باشید تا بهترین انتخاب رو انجام دهید."
+    },
+    {
+      "id": 2,
+      "image": "https://www.dastresi.com/images/icons/icon1.png",
+      "name": "قیمت مناسب با بالاترین کیفیت",
+      "des": "گروه دسترسی در تلاش است که کالای با کیفیت را با مناسب&zwnj;ترین قیمت به دست شما برساند."
+    },
+    {
+      "id": 3,
+      "image": "https://www.dastresi.com/images/icons/icon3.png",
+      "name": "ارسال سریع",
+      "des": " ارسال از طریق تیپاکس، پست پیشتاز و پیک موتوری (ویژه تهران) صورت می گیرد."
+    },
+    {
+      "id": 4,
+      "image": "https://www.dastresi.com/images/icons/icon4.png",
+      "name": "امکان خرید حضوری",
+      "des": " مشتری گرامی جهت خرید حضوری میتوانید به آدرس مندرج در پایین سایت مراجعه نمایید."
+    }
+  ],
+  "brand": [
+    {
+      "id": 1,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/02/24/Untitled-159.jpg"
+    },
+    {
+      "id": 2,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/02/26/H64c19886758b40378c31d5f46c5ae984A.jpg"
+    },
+    {
+      "id": 3,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/04/09/somo%20logo.png"
+    },
+    {
+      "id": 4,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/03/07/logp.jpg"
+    },
+    {
+      "id": 5,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/03/17/logo.jpg"
+    },
+    {
+      "id": 6,
+      "image": "https://www.dastresi.com/upload/filemanager/2024/11/21/Untitled-1.jpg"
+    },
+    {
+      "id": 7,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/02/24/logo-1.jpg"
+    },
+    {
+      "id": 8,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/02/24/Untitled-159.jpg"
+    },
+    {
+      "id": 9,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/02/26/H64c19886758b40378c31d5f46c5ae984A.jpg"
+    },
+    {
+      "id": 10,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/04/09/somo%20logo.png"
+    },
+    {
+      "id": 11,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/03/07/logp.jpg"
+    },
+    {
+      "id": 12,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/03/17/logo.jpg"
+    }
+  ],
+  "offer2": [
+    {
+      "id": 1,
+      "name": " لوازم جانبی موبایل و کامپیوتر",
+      "title": " شارژر دیواری 25 وات هادرون مدل Hadron C1011 ",
+      "image": "https://www.dastresi.com/upload/filemanager/2025/02/13/HADRON-25W-22.jpg" ,
+      "oldPrice":"1,900,000" ,
+      "price":"1,870,000"
+    },
+    {
+      "id": 2,
+      "name": " شارژ دیواری",
+      "title": " شارژر دیواری 67 واتی گان با کابل تایپ سی مک دودو مدل  Mcdodo CH-410 ",
+      "image": "https://www.dastresi.com/upload/filemanager/2025/03/03/MCDODO-4100-11.jpg" ,
+      "oldPrice":"5,931,000" ,
+      "price":"5,695,000"
+    },
+    {
+      "id": 3,
+      "name": " لوازم جانبی موبایل و کامپیوتر",
+      "title": " شارژر دیواری راوپاور 20 واتی گان5 مدل Ravpower RP-PC1055",
+      "image": "https://www.dastresi.com/upload/filemanager/2026/06/23/3135123-3.jpg" ,
+      "oldPrice":"2,050,000" ,
+      "price":"1,550,000"
+    },
+    {
+      "id": 4,
+      "name": " انواع گچت های جذاب",
+      "title": "پمپ باد گرین INFLATOR مدل Green Lion GNTYIRNFBK",
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/12/POMP-GREEN-11.jpg" ,
+      "oldPrice":"5,680,000" ,
+      "price":"4,900,000"
+    },
+    {
+      "id": 5,
+      "name": " فلش مموری",
+      "title": " فلش مموری وریتی ظرفیت 64 گیگ مدل Verity 810 ",
+      "image": "https://www.dastresi.com/upload/filemanager/2021/03/17/VER-810-1.jpg" ,
+      "oldPrice":"" ,
+      "price":"1,450,000"
+    },
+    {
+      "id": 6,
+      "name": " شارژر دیواری",
+      "title": " شارژر دیواری گان 100 واتی الدینیو مدل Ldnio Q408  ",
+      "image": "https://www.dastresi.com/upload/filemanager/2024/09/30/Untitled-1.jpg" ,
+      "oldPrice":"6,250,000" ,
+      "price":"5,250,000"
+    },
+    {
+      "id": 7,
+      "name": " هندزفری بلوتوثی",
+      "title": " هندزفری بلوتوثی ورزشی القایی پاورولوژی مدل Powerology Pwlau008 ",
+      "image": "https://www.dastresi.com/upload/filemanager/2024/10/02/0088-1.jpg" ,
+      "oldPrice":"5,100,000" ,
+      "price":"4,800,000"
+    },
+    {
+      "id": 8,
+      "name": " ماوس کیبورد و پدموس",
+      "title": " کیبورد بلوتوثی مافی مدل کیبورد بلوتوثی مافی مدل  ",
+      "image": "https://www.dastresi.com/upload/filemanager/2024/10/19/Untitled-1.jpg" ,
+      "oldPrice":"3,190,000" ,
+      "price":"2,990,000"
+    } ,
+    {
+      "id": 9,
+      "name": " باتری الکالاین",
+      "title": " باتری نیم قلم 10 تایی شیائومی مدل Xiaomi ZI7 ",
+      "image": "https://www.dastresi.com/upload/filemanager/2024/10/23/battrey-xiaomi-NIM-1161.jpg" ,
+      "oldPrice":"" ,
+      "price":"1,100,000"
+    } 
+  ] ,
+  "Article":[
+    {
+      "id":1 ,
+      "image":"https://www.dastresi.com/upload/filemanager/2026/08/24/w18-hero-wm.jpg",
+      "des":"HDMI تصویر ندارد ; عیب یابی صدا و تصویر"
+    } ,
+    {
+      "id":2 ,
+      "image":"https://www.dastresi.com/upload/filemanager/2026/08/22/w10-hero-wm.jpg",
+      "des":"چشمک زدن پاوربانک یعنی چه؟معنی چراغ ها"
+    } ,
+    {
+      "id":3 ,
+      "image":"https://www.dastresi.com/upload/filemanager/2026/08/20/w04-hero-wm.jpg",
+      "des":"چرا هندزفری بلوتوث وصل نمیشود؟عیب یابی سریع"
+    } ,
+    {
+      "id":4 ,
+      "image":"https://www.dastresi.com/upload/filemanager/2026/08/18/w16-hero-wm.jpg",
+      "des":"مشکل پاوربانک; علت شارژ نشدن و رفع قدم به قدم"
+    } ,
+    {
+      "id":5 ,
+      "image":"https://www.dastresi.com/upload/filemanager/2026/08/31/w22-hero-wm.jpg",
+      "des":"فلش 128 گیگ USB2 یا  USB3 کدام را بخریم"
+    } ,
+    {
+      "id":6 ,
+      "image":"https://www.dastresi.com/upload/filemanager/2026/08/27/w06-hero-wm.jpg",
+      "des":"قطع و وصل شدن شارژر; کابل مقصر است یا آداپتور"
+    } ,
+    {
+      "id":7 ,
+      "image":"https://www.dastresi.com/upload/filemanager/2026/08/26/featured-hero-wm.jpg",
+      "des":"عوارض کابل شارژ تقلبی; چیزی بیشتر از خراب شدن شارژر"
+    } ,
+    {
+      "id":8 ,
+      "image":"https://www.dastresi.com/upload/filemanager/2026/08/25/w12-hero-wm.jpg",
+      "des":"چند وات شارژر برای آیفون لازم است"
+    } 
+  ]
+}
