@@ -14,7 +14,6 @@ export default function App() {
   return (
     <>
       <Header />
-      <Menu />
       <Slider />
       <Items />
       <Slider3 />

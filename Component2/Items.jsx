@@ -7,6 +7,28 @@ export default function Items() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
 
+  // تایمر 24 ساعته
+  const [time, setTime] = useState(24 * 60 * 60);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime((prev) => {
+        if (prev <= 0) {
+          return 24 * 60 * 60;
+        }
+
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // تبدیل ثانیه به ساعت، دقیقه و ثانیه
+  const hours = Math.floor(time / 3600);
+  const minutes = Math.floor((time % 3600) / 60);
+  const seconds = time % 60;
+
   const getItem = async () => {
     try {
       let res = await fetch(`${API}/items`);
@@ -48,7 +70,7 @@ export default function Items() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth="2"
-            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+            d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 01-18 0z"
           />
         </svg>
 
@@ -60,16 +82,22 @@ export default function Items() {
   return (
     <>
       <div className="mt-10 md:mt-15 lg:mt-20 m-auto w-[95%] md:w-[92%] lg:w-[92%] h-auto bg-gray-300 rounded-2xl p-4 md:p-6 lg:p-10">
+        {/* عنوان و تایمر */}
         <div className="w-full flex flex-col md:flex-row justify-between items-center text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 lg:mb-10 gap-4">
           <h1 className="px-0 md:px-5 lg:px-10">
             <span className="text-red-600">%</span>
             تخفیف های روزانه دسترسی
           </h1>
 
-          <h2 className="px-0 md:px-5 lg:px-10">timer</h2>
+          <h2 className="text-gray-600 px-0 md:px-5 lg:px-10 lg:text-3xl">
+            {String(hours).padStart(2, "0")}:{String(minutes).padStart(2, "0")}:
+            {String(seconds).padStart(2, "0")}
+          </h2>
         </div>
 
+        {/* محصولات */}
         <div className="w-full flex flex-col lg:flex-row gap-5 lg:gap-10">
+          {/* دو محصول اصلی */}
           <div className="w-full lg:w-[65%] flex flex-col md:flex-row gap-5 lg:gap-10">
             {Item.slice(0, 2).map((item) => (
               <div
@@ -97,6 +125,7 @@ export default function Items() {
 
                 <p className="text-blue-600 text-left text-lg md:text-xl font-bold">
                   {item.price}
+
                   <span className="text-gray-500 text-sm md:text-base font-normal px-1">
                     تومان
                   </span>
@@ -105,6 +134,7 @@ export default function Items() {
             ))}
           </div>
 
+          {/* سه محصول کناری */}
           <div className="w-full lg:w-[35%] flex flex-col gap-5">
             {Item.slice(2, 5).map((item) => (
               <div
@@ -128,6 +158,7 @@ export default function Items() {
 
                   <p className="text-blue-600 text-lg md:text-xl mt-2 md:mt-4 font-bold">
                     {item.price}
+
                     <span className="text-gray-500 text-sm md:text-base font-normal px-1">
                       تومان
                     </span>
