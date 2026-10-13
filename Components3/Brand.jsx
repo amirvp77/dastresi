@@ -5,16 +5,16 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const API = "http://localhost:3000";
+const API = "https://amirvp77.github.io/dastresi-db/db.json";
 
 export default function Brand() {
   const [brand, setBrand] = useState([]);
 
   const getBrand = async () => {
-    const res = await fetch(`${API}/brand`);
+    const res = await fetch(`${API}`);
     const data = await res.json();
 
-    setBrand(data);
+    setBrand(data.brand);
   };
 
   useEffect(() => {

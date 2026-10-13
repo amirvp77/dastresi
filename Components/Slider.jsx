@@ -6,16 +6,16 @@ import "swiper/css/pagination";
 
 import { Pagination, Autoplay } from "swiper/modules";
 
-const API = "http://localhost:3000";
+const API = "https://amirvp77.github.io/dastresi-db/db.json";
 
 export default function Slider() {
   const [sliders, setSliders] = useState([]);
 
   const getSlider = async () => {
     try {
-      const res = await fetch(`${API}/slider`);
+      const res = await fetch(`${API}`);
       const data = await res.json();
-      setSliders(data);
+      setSliders(data.slider);
     } catch (err) {
       console.log(err);
     }

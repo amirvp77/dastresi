@@ -9,15 +9,15 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
 
 export default function Stock2() {
-  const API = "http://localhost:3000";
+  const API = "https://amirvp77.github.io/dastresi-db/db.json";
 
   const [stock, setStock] = useState([]);
 
   const getStock = async () => {
     try {
-      let res = await fetch(`${API}/offer2`);
+      let res = await fetch(`${API}`);
       let data = await res.json();
-      setStock(data);
+      setStock(data.offer2);
     } catch (err) {
       console.log(err);
     }

@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 
 export default function Dastresi() {
-  const API = "http://localhost:3000";
+  const API = "https://amirvp77.github.io/dastresi-db/db.json";
 
   const [dastresi, setDastresi] = useState([]);
 
   const getDastresi = async () => {
     try {
-      let res = await fetch(`${API}/dastresi`);
+      let res = await fetch(`${API}`);
       let data = await res.json();
 
-      setDastresi(data);
+      setDastresi(data.dastresi);
     } catch (err) {
       console.log(err);
     }

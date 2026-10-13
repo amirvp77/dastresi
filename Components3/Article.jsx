@@ -6,16 +6,16 @@ import { Autoplay, Navigation } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function Article() {
-  const API = "http://localhost:3000";
+  const API = "https://amirvp77.github.io/dastresi-db/db.json";
 
   const [article, setArticle] = useState([]);
 
   const getArticle = async () => {
     try {
-      let res = await fetch(`${API}/Article`);
+      let res = await fetch(`${API}`);
       let data = await res.json();
 
-      setArticle(data);
+      setArticle(data.Article);
     } catch (err) {
       console.log(err);
     }

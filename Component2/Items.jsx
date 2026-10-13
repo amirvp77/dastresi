@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 
-const API = "http://localhost:3000";
+const API = "https://amirvp77.github.io/dastresi-db/db.json";
 
 export default function Items() {
   const [Item, setItem] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  // تایمر 24 ساعته
   const [time, setTime] = useState(24 * 60 * 60);
 
   useEffect(() => {
@@ -24,17 +23,16 @@ export default function Items() {
     return () => clearInterval(interval);
   }, []);
 
-  // تبدیل ثانیه به ساعت، دقیقه و ثانیه
   const hours = Math.floor(time / 3600);
   const minutes = Math.floor((time % 3600) / 60);
   const seconds = time % 60;
 
   const getItem = async () => {
     try {
-      let res = await fetch(`${API}/items`);
+      let res = await fetch(`${API}`);
       let data = await res.json();
 
-      setItem(data);
+      setItem(data.items);
     } catch (err) {
       setError(true);
       console.log(err);
@@ -82,7 +80,6 @@ export default function Items() {
   return (
     <>
       <div className="mt-10 md:mt-15 lg:mt-20 m-auto w-[95%] md:w-[92%] lg:w-[92%] h-auto bg-gray-300 rounded-2xl p-4 md:p-6 lg:p-10">
-        {/* عنوان و تایمر */}
         <div className="w-full flex flex-col md:flex-row justify-between items-center text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 lg:mb-10 gap-4">
           <h1 className="px-0 md:px-5 lg:px-10">
             <span className="text-red-600">%</span>
@@ -95,9 +92,7 @@ export default function Items() {
           </h2>
         </div>
 
-        {/* محصولات */}
         <div className="w-full flex flex-col lg:flex-row gap-5 lg:gap-10">
-          {/* دو محصول اصلی */}
           <div className="w-full lg:w-[65%] flex flex-col md:flex-row gap-5 lg:gap-10">
             {Item.slice(0, 2).map((item) => (
               <div
@@ -134,7 +129,6 @@ export default function Items() {
             ))}
           </div>
 
-          {/* سه محصول کناری */}
           <div className="w-full lg:w-[35%] flex flex-col gap-5">
             {Item.slice(2, 5).map((item) => (
               <div

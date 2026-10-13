@@ -4,25 +4,22 @@ import { IoIosSearch } from "react-icons/io";
 import { HiMenu } from "react-icons/hi";
 import Menu from "./Menu";
 
-const API = "http://localhost:3000";
+const API = "https://amirvp77.github.io/dastresi-db/db.json";
 
 export default function Header() {
   const [nav, setNav] = useState([]);
   const [menu, setMenu] = useState([]);
-
   const [searchOpen, setSearchOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
   const [isOpen, setIsOpen] = useState(false);
-
   const [mobileSubMenu, setMobileSubMenu] = useState(null);
   const [mobileSubSubMenu, setMobileSubSubMenu] = useState(null);
 
   const getHeader = async () => {
     try {
-      const res = await fetch(`${API}/header`);
+      const res = await fetch(`${API}`);
       const data = await res.json();
-      setNav(data);
+      setNav(data.header);
     } catch (err) {
       console.log(err);
     }
@@ -30,9 +27,9 @@ export default function Header() {
 
   const getMenu = async () => {
     try {
-      const res = await fetch(`${API}/menu`);
+      const res = await fetch(`${API}`);
       const data = await res.json();
-      setMenu(data);
+      setMenu(data.menu);
     } catch (err) {
       console.log(err);
     }
