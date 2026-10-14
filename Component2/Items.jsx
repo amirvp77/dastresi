@@ -81,8 +81,8 @@ export default function Items() {
     <>
       <div className="mt-10 md:mt-15 lg:mt-20 m-auto w-[95%] md:w-[92%] lg:w-[92%] h-auto bg-gray-300 rounded-2xl p-4 md:p-6 lg:p-10">
         <div className="w-full flex flex-col md:flex-row justify-between items-center text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 lg:mb-10 gap-4">
-          <h1 className="px-0 md:px-5 lg:px-10">
-            <span className="text-red-600">%</span>
+          <h1 className="px-0 md:px-5 text-2xl md:font-bold lg:px-10">
+            <span className="text-red-600 px-1 font-bold">%</span>
             تخفیف های روزانه دسترسی
           </h1>
 
