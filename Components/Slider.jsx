@@ -54,11 +54,13 @@ export default function Slider() {
         >
           {sliders.map((slider) => (
             <SwiperSlide key={slider.id}>
-              <img
-                src={slider.image}
-                alt={`slider ${slider.id}`}
-                className="w-full h-full object-cover rounded-2xl"
-              />
+              <div className="rounded-2xl overflow-hidden">
+                <img
+                  src={slider.image}
+                  alt={`slider ${slider.id}`}
+                  className="w-full h-full object-contain md:object-cover rounded-2xl"
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

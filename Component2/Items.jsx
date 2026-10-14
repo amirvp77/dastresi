@@ -7,17 +7,32 @@ export default function Items() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  const [time, setTime] = useState(24 * 60 * 60);
+  const DURATION = 24 * 60 * 60;
+
+  const [time, setTime] = useState(() => {
+    const endTime = localStorage.getItem("timerEndTime");
+
+    if (endTime && Number(endTime) > Date.now()) {
+      return Math.floor((Number(endTime) - Date.now()) / 1000);
+    }
+
+    localStorage.setItem("timerEndTime", String(Date.now() + DURATION * 1000));
+
+    return DURATION;
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime((prev) => {
-        if (prev <= 0) {
-          return 24 * 60 * 60;
-        }
+      const endTime = Number(localStorage.getItem("timerEndTime"));
+      const remaining = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
 
-        return prev - 1;
-      });
+      if (remaining <= 0) {
+        const newEndTime = Date.now() + DURATION * 1000;
+        localStorage.setItem("timerEndTime", String(newEndTime));
+        setTime(DURATION);
+      } else {
+        setTime(remaining);
+      }
     }, 1000);
 
     return () => clearInterval(interval);
