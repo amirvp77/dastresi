@@ -14,6 +14,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [mobileSubMenu, setMobileSubMenu] = useState(null);
   const [mobileSubSubMenu, setMobileSubSubMenu] = useState(null);
+  const [activeMenu, setActiveMenu] = useState(null);
 
   const getHeader = async () => {
     try {
@@ -46,10 +47,11 @@ export default function Header() {
     setIsOpen(false);
     setMobileSubMenu(null);
     setMobileSubSubMenu(null);
+    setActiveMenu(null);
   };
 
   const handleMobileMenu = () => {
-    if (isOpen) { 
+    if (isOpen) {
       closeAll();
     } else {
       setSearchOpen(false);
@@ -66,6 +68,13 @@ export default function Header() {
             <div
               onClick={closeAll}
               className="fixed inset-0 bg-black/20 z-[150]"
+            ></div>
+          )}
+
+          {isOpen && (
+            <div
+              onClick={closeAll}
+              className="fixed inset-0 bg-black/20 z-[200] lg:hidden"
             ></div>
           )}
 
@@ -146,6 +155,8 @@ export default function Header() {
               setMobileSubMenu={setMobileSubMenu}
               mobileSubSubMenu={mobileSubSubMenu}
               setMobileSubSubMenu={setMobileSubSubMenu}
+              activeMenu={activeMenu}
+              setActiveMenu={setActiveMenu}
             />
           </div>
         </header>

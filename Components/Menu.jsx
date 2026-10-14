@@ -9,6 +9,8 @@ export default function Menu({
   setMobileSubMenu,
   mobileSubSubMenu,
   setMobileSubSubMenu,
+  activeMenu,
+  setActiveMenu,
 }) {
   return (
     <>
@@ -38,13 +40,13 @@ export default function Menu({
                   {item.name}
                 </span>
 
-                {item.id !== "1" && (
+                {item.dropdown && (
                   <AiFillCaretDown className="mt-2 text-gray-500" />
                 )}
               </div>
 
               {item.dropdown && (
-                <ul className="absolute top-full right-0 hidden group-hover:block w-55 bg-white shadow-[0_8px_25px_rgba(0,0,0,0.18)] z-[200]">
+                <ul className="absolute top-[calc(100%+12px)] right-0 hidden group-hover:block w-55 bg-white shadow-[0_8px_25px_rgba(0,0,0,0.18)] z-[200]">
                   {item.dropdown.map((dropdownItem) => (
                     <li
                       key={dropdownItem.id}
@@ -114,6 +116,8 @@ export default function Menu({
               <div key={item.id}>
                 <div
                   onClick={() => {
+                    setActiveMenu(item.id);
+
                     if (item.dropdown) {
                       setMobileSubMenu(
                         mobileSubMenu === item.id ? null : item.id,
@@ -122,15 +126,23 @@ export default function Menu({
                       setMobileSubSubMenu(null);
                     }
                   }}
-                  className="min-h-12 px-4 flex items-center justify-between border-b border-gray-100 cursor-pointer"
+                  className={`min-h-12 px-4 flex items-center justify-between border-b border-gray-100 cursor-pointer transition-colors ${
+                    activeMenu === item.id ? "bg-blue-50 text-blue-700" : ""
+                  }`}
                 >
-                  <span className="text-[15px] text-gray-800">{item.name}</span>
+                  <span
+                    className={`text-[15px] ${
+                      activeMenu === item.id ? "text-blue-700" : "text-gray-800"
+                    }`}
+                  >
+                    {item.name}
+                  </span>
 
                   {item.dropdown && (
                     <AiFillCaretLeft
                       className={`transition-transform ${
                         mobileSubMenu === item.id ? "-rotate-90" : ""
-                      }`}
+                      } ${activeMenu === item.id ? "text-blue-700" : ""}`}
                     />
                   )}
                 </div>
@@ -172,6 +184,7 @@ export default function Menu({
                               {dropdownItem.dropdown.map((subItem) => (
                                 <div
                                   key={subItem.id}
+                                  onClick={() => {}}
                                   className="min-h-10 px-10 flex items-center border-b border-gray-200 text-sm text-gray-500 cursor-pointer"
                                 >
                                   {subItem.name}

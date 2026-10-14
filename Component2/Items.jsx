@@ -86,7 +86,7 @@ export default function Items() {
             تخفیف های روزانه دسترسی
           </h1>
 
-          <h2 className="text-gray-600 px-0 md:px-5 lg:px-10 lg:text-3xl">
+          <h2 className="text-gray-600 text-2xl font-bold px-0 md:px-5 lg:px-10 lg:text-3xl">
             {String(hours).padStart(2, "0")}:{String(minutes).padStart(2, "0")}:
             {String(seconds).padStart(2, "0")}
           </h2>
@@ -133,7 +133,7 @@ export default function Items() {
             {Item.slice(2, 5).map((item) => (
               <div
                 key={item.id}
-                className="h-35 md:h-40 lg:h-40 bg-white rounded-2xl p-4 flex gap-4 md:gap-5"
+                className="h-35 md:h-40 lg:h-40 bg-white rounded-2xl p-2 flex gap-2 md:gap-5"
               >
                 <img src={item.image} className="w-24 md:w-30 object-contain" />
 
