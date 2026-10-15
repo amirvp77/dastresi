@@ -1,10 +1,5 @@
 {
-  "title": [
-    {
-      "id": 1,
-      "title": "فروشگاه اینترنتی دسترسی"
-    }
-  ],
+  "timerEndTime": "2026-10-16T20:00:00+03:30",
   "header": [
     {
       "id": 1,
@@ -76,7 +71,7 @@
         },
         {
           "id": 3,
-          "name": "تجهیزات ذخیره سازی" ,
+          "name": "تجهیزات ذخیره سازی",
           "dropdown": [
             {
               "id": 1,
@@ -89,7 +84,8 @@
             {
               "id": 3,
               "name": "هارد اکسترنال"
-            }]
+            }
+          ]
         },
         {
           "id": 4,
@@ -106,23 +102,23 @@
             {
               "id": 3,
               "name": "هدست سیم دار"
-            } ,
+            },
             {
               "id": 4,
               "name": "هدفون بلوتوث"
-            } ,
+            },
             {
               "id": 5,
               "name": " هندزفری بلوتوثی"
-            } ,
+            },
             {
               "id": 6,
               "name": "هندزفری بلوتوث دور گردنی"
-            } ,
+            },
             {
               "id": 7,
               "name": "هندزفری بلوتوث تک گوش"
-            } 
+            }
           ]
         },
         {
@@ -158,19 +154,19 @@
             {
               "id": 3,
               "name": "شارژر رومیزی"
-            } ,
+            },
             {
               "id": 4,
               "name": "شارژر فندکی"
-            } ,
+            },
             {
               "id": 5,
               "name": "شارژر سامسونگ"
-            } ,
+            },
             {
               "id": 6,
               "name": "شارژر آیفون"
-            } 
+            }
           ]
         },
         {
@@ -330,15 +326,15 @@
             {
               "id": 3,
               "name": "باتری شارژی"
-            } ,
+            },
             {
               "id": 4,
               "name": "شارژر باتری"
-            } ,
+            },
             {
               "id": 5,
               "name": "باتری سکه ای"
-            } 
+            }
           ]
         },
         {
@@ -473,57 +469,57 @@
       "id": 1,
       "name": " انواع گچت های جذاب",
       "title": " چراغ خواب پروژکتوری کهکشانی گرین ل... ",
-      "image": "https://www.dastresi.com/upload/filemanager/2026/06/21/greeen-2222.jpg" ,
-      "price":""
+      "image": "https://www.dastresi.com/upload/filemanager/2026/06/21/greeen-2222.jpg",
+      "price": ""
     },
     {
       "id": 2,
       "name": " انواع گچت های جذاب",
       "title": " هولدر وکیوم چرخش 360 درجه مک دودو ... ",
-      "image": "https://www.dastresi.com/upload/filemanager/2026/02/23/MCDODO-8420-11.jpg" ,
-      "price":"2,200,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2026/02/23/MCDODO-8420-11.jpg",
+      "price": "2,200,000"
     },
     {
       "id": 3,
       "name": " انواع گچت های جذاب",
       "title": " ساعت هوشمند مک دودو مدل Mcdodo IW-... ",
-      "image": "https://www.dastresi.com/upload/filemanager/2026/02/23/mcdodo-757-11.jpg" ,
-      "price":"6,500,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2026/02/23/mcdodo-757-11.jpg",
+      "price": "6,500,000"
     },
     {
       "id": 4,
       "name": " انواع گچت های جذاب",
       "title": " جامپ استارتر و پمپ باد 15200 میلی ... ",
-      "image": "https://www.dastresi.com/upload/filemanager/2026/02/22/PORO4KARE-111.jpg" ,
-      "price":"18,500,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2026/02/22/PORO4KARE-111.jpg",
+      "price": "18,500,000"
     },
     {
       "id": 5,
       "name": " انواع گچت های جذاب",
       "title": " رابط برق 4 خانه 10 متری پرودو مدل ... ",
-      "image": "https://www.dastresi.com/upload/filemanager/2026/02/15/PORODO10M-11.jpg" ,
-      "price":""
+      "image": "https://www.dastresi.com/upload/filemanager/2026/02/15/PORODO10M-11.jpg",
+      "price": ""
     },
     {
       "id": 6,
       "name": " انواع گچت های جذاب",
       "title": " پمپ باد گرین INFLATOR مدل Green Li... ",
-      "image": "https://www.dastresi.com/upload/filemanager/2025/04/12/POMP-GREEN-11.jpg" ,
-      "price":"4,900,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/12/POMP-GREEN-11.jpg",
+      "price": "4,900,000"
     },
     {
       "id": 7,
       "name": " انواع گچت های جذاب",
       "title": " اسپیکر بلوتوثی انکر سلکت 4 گو 5 وا... ",
-      "image": "https://www.dastresi.com/upload/filemanager/2026/06/27/GO4ANKER-11.jpg" ,
-      "price":""
+      "image": "https://www.dastresi.com/upload/filemanager/2026/06/27/GO4ANKER-11.jpg",
+      "price": ""
     },
     {
       "id": 8,
       "name": " انواع گچت های جذاب",
       "title": " پنکه دستی Windix گرین لاین مدل Gre... ",
-      "image": "https://www.dastresi.com/upload/filemanager/2026/06/28/PANKE-WIN-11.jpg" ,
-      "price":"1,690,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2026/06/28/PANKE-WIN-11.jpg",
+      "price": "1,690,000"
     }
   ],
   "dastresi": [
@@ -607,115 +603,115 @@
       "id": 1,
       "name": " لوازم جانبی موبایل و کامپیوتر",
       "title": " شارژر دیواری 25 وات هادرون مدل Hadron C1011 ",
-      "image": "https://www.dastresi.com/upload/filemanager/2025/02/13/HADRON-25W-22.jpg" ,
-      "oldPrice":"1,900,000" ,
-      "price":"1,870,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2025/02/13/HADRON-25W-22.jpg",
+      "oldPrice": "1,900,000",
+      "price": "1,870,000"
     },
     {
       "id": 2,
       "name": " شارژ دیواری",
       "title": " شارژر دیواری 67 واتی گان با کابل تایپ سی مک دودو مدل  Mcdodo CH-410 ",
-      "image": "https://www.dastresi.com/upload/filemanager/2025/03/03/MCDODO-4100-11.jpg" ,
-      "oldPrice":"5,931,000" ,
-      "price":"5,695,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2025/03/03/MCDODO-4100-11.jpg",
+      "oldPrice": "5,931,000",
+      "price": "5,695,000"
     },
     {
       "id": 3,
       "name": " لوازم جانبی موبایل و کامپیوتر",
       "title": " شارژر دیواری راوپاور 20 واتی گان5 مدل Ravpower RP-PC1055",
-      "image": "https://www.dastresi.com/upload/filemanager/2026/06/23/3135123-3.jpg" ,
-      "oldPrice":"2,050,000" ,
-      "price":"1,550,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2026/06/23/3135123-3.jpg",
+      "oldPrice": "2,050,000",
+      "price": "1,550,000"
     },
     {
       "id": 4,
       "name": " انواع گچت های جذاب",
       "title": "پمپ باد گرین INFLATOR مدل Green Lion GNTYIRNFBK",
-      "image": "https://www.dastresi.com/upload/filemanager/2025/04/12/POMP-GREEN-11.jpg" ,
-      "oldPrice":"5,680,000" ,
-      "price":"4,900,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/12/POMP-GREEN-11.jpg",
+      "oldPrice": "5,680,000",
+      "price": "4,900,000"
     },
     {
       "id": 5,
       "name": " فلش مموری",
       "title": " فلش مموری وریتی ظرفیت 64 گیگ مدل Verity 810 ",
-      "image": "https://www.dastresi.com/upload/filemanager/2021/03/17/VER-810-1.jpg" ,
-      "oldPrice":"" ,
-      "price":"1,450,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2021/03/17/VER-810-1.jpg",
+      "oldPrice": "",
+      "price": "1,450,000"
     },
     {
       "id": 6,
       "name": " شارژر دیواری",
       "title": " شارژر دیواری گان 100 واتی الدینیو مدل Ldnio Q408  ",
-      "image": "https://www.dastresi.com/upload/filemanager/2024/09/30/Untitled-1.jpg" ,
-      "oldPrice":"6,250,000" ,
-      "price":"5,250,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2024/09/30/Untitled-1.jpg",
+      "oldPrice": "6,250,000",
+      "price": "5,250,000"
     },
     {
       "id": 7,
       "name": " هندزفری بلوتوثی",
       "title": " هندزفری بلوتوثی ورزشی القایی پاورولوژی مدل Powerology Pwlau008 ",
-      "image": "https://www.dastresi.com/upload/filemanager/2024/10/02/0088-1.jpg" ,
-      "oldPrice":"5,100,000" ,
-      "price":"4,800,000"
+      "image": "https://www.dastresi.com/upload/filemanager/2024/10/02/0088-1.jpg",
+      "oldPrice": "5,100,000",
+      "price": "4,800,000"
     },
     {
       "id": 8,
       "name": " ماوس کیبورد و پدموس",
       "title": " کیبورد بلوتوثی مافی مدل کیبورد بلوتوثی مافی مدل  ",
-      "image": "https://www.dastresi.com/upload/filemanager/2024/10/19/Untitled-1.jpg" ,
-      "oldPrice":"3,190,000" ,
-      "price":"2,990,000"
-    } ,
+      "image": "https://www.dastresi.com/upload/filemanager/2024/10/19/Untitled-1.jpg",
+      "oldPrice": "3,190,000",
+      "price": "2,990,000"
+    },
     {
       "id": 9,
       "name": " باتری الکالاین",
       "title": " باتری نیم قلم 10 تایی شیائومی مدل Xiaomi ZI7 ",
-      "image": "https://www.dastresi.com/upload/filemanager/2024/10/23/battrey-xiaomi-NIM-1161.jpg" ,
-      "oldPrice":"" ,
-      "price":"1,100,000"
-    } 
-  ] ,
-  "Article":[
+      "image": "https://www.dastresi.com/upload/filemanager/2024/10/23/battrey-xiaomi-NIM-1161.jpg",
+      "oldPrice": "",
+      "price": "1,100,000"
+    }
+  ],
+  "Article": [
     {
-      "id":1 ,
-      "image":"https://www.dastresi.com/upload/filemanager/2026/08/24/w18-hero-wm.jpg",
-      "des":"HDMI تصویر ندارد ; عیب یابی صدا و تصویر"
-    } ,
+      "id": 1,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/08/24/w18-hero-wm.jpg",
+      "des": "HDMI تصویر ندارد ; عیب یابی صدا و تصویر"
+    },
     {
-      "id":2 ,
-      "image":"https://www.dastresi.com/upload/filemanager/2026/08/22/w10-hero-wm.jpg",
-      "des":"چشمک زدن پاوربانک یعنی چه؟معنی چراغ ها"
-    } ,
+      "id": 2,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/08/22/w10-hero-wm.jpg",
+      "des": "چشمک زدن پاوربانک یعنی چه؟معنی چراغ ها"
+    },
     {
-      "id":3 ,
-      "image":"https://www.dastresi.com/upload/filemanager/2026/08/20/w04-hero-wm.jpg",
-      "des":"چرا هندزفری بلوتوث وصل نمیشود؟عیب یابی سریع"
-    } ,
+      "id": 3,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/08/20/w04-hero-wm.jpg",
+      "des": "چرا هندزفری بلوتوث وصل نمیشود؟عیب یابی سریع"
+    },
     {
-      "id":4 ,
-      "image":"https://www.dastresi.com/upload/filemanager/2026/08/18/w16-hero-wm.jpg",
-      "des":"مشکل پاوربانک; علت شارژ نشدن و رفع قدم به قدم"
-    } ,
+      "id": 4,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/08/18/w16-hero-wm.jpg",
+      "des": "مشکل پاوربانک; علت شارژ نشدن و رفع قدم به قدم"
+    },
     {
-      "id":5 ,
-      "image":"https://www.dastresi.com/upload/filemanager/2026/08/31/w22-hero-wm.jpg",
-      "des":"فلش 128 گیگ USB2 یا  USB3 کدام را بخریم"
-    } ,
+      "id": 5,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/08/31/w22-hero-wm.jpg",
+      "des": "فلش 128 گیگ USB2 یا  USB3 کدام را بخریم"
+    },
     {
-      "id":6 ,
-      "image":"https://www.dastresi.com/upload/filemanager/2026/08/27/w06-hero-wm.jpg",
-      "des":"قطع و وصل شدن شارژر; کابل مقصر است یا آداپتور"
-    } ,
+      "id": 6,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/08/27/w06-hero-wm.jpg",
+      "des": "قطع و وصل شدن شارژر; کابل مقصر است یا آداپتور"
+    },
     {
-      "id":7 ,
-      "image":"https://www.dastresi.com/upload/filemanager/2026/08/26/featured-hero-wm.jpg",
-      "des":"عوارض کابل شارژ تقلبی; چیزی بیشتر از خراب شدن شارژر"
-    } ,
+      "id": 7,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/08/26/featured-hero-wm.jpg",
+      "des": "عوارض کابل شارژ تقلبی; چیزی بیشتر از خراب شدن شارژر"
+    },
     {
-      "id":8 ,
-      "image":"https://www.dastresi.com/upload/filemanager/2026/08/25/w12-hero-wm.jpg",
-      "des":"چند وات شارژر برای آیفون لازم است"
-    } 
+      "id": 8,
+      "image": "https://www.dastresi.com/upload/filemanager/2026/08/25/w12-hero-wm.jpg",
+      "des": "چند وات شارژر برای آیفون لازم است"
+    }
   ]
 }

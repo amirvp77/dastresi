@@ -3,51 +3,26 @@ import { useEffect, useState } from "react";
 const API = "https://amirvp77.github.io/dastresi-db/db.json";
 
 export default function Items() {
+  
   const [Item, setItem] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  const DURATION = 24 * 60 * 60;
-
-  const [time, setTime] = useState(() => {
-    const endTime = localStorage.getItem("timerEndTime");
-
-    if (endTime && Number(endTime) > Date.now()) {
-      return Math.floor((Number(endTime) - Date.now()) / 1000);
-    }
-
-    localStorage.setItem("timerEndTime", String(Date.now() + DURATION * 1000));
-
-    return DURATION;
-  });
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const endTime = Number(localStorage.getItem("timerEndTime"));
-      const remaining = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
-
-      if (remaining <= 0) {
-        const newEndTime = Date.now() + DURATION * 1000;
-        localStorage.setItem("timerEndTime", String(newEndTime));
-        setTime(DURATION);
-      } else {
-        setTime(remaining);
-      }
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const hours = Math.floor(time / 3600);
-  const minutes = Math.floor((time % 3600) / 60);
-  const seconds = time % 60;
+  const [endTime, setEndTime] = useState(null);
+  const [time, setTime] = useState(0);
 
   const getItem = async () => {
     try {
-      let res = await fetch(`${API}`);
-      let data = await res.json();
+      const res = await fetch(API);
+
+      if (!res.ok) {
+        throw new Error("خطا در دریافت اطلاعات");
+      }
+
+      const data = await res.json();
 
       setItem(data.items);
+      setEndTime(new Date(data.timerEndTime).getTime());
     } catch (err) {
       setError(true);
       console.log(err);
@@ -59,6 +34,22 @@ export default function Items() {
   useEffect(() => {
     getItem();
   }, []);
+
+  useEffect(() => {
+    if (!endTime) return;
+
+    const interval = setInterval(() => {
+      const remaining = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
+
+      setTime(remaining);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [endTime]);
+
+  const hours = Math.floor(time / 3600);
+  const minutes = Math.floor((time % 3600) / 60);
+  const seconds = time % 60;
 
   if (isLoading) {
     return (
@@ -87,7 +78,7 @@ export default function Items() {
           />
         </svg>
 
-        <span>Error! Task failed successfully.</span>
+        <span>خطا در دریافت اطلاعات!</span>
       </div>
     );
   }
@@ -117,6 +108,7 @@ export default function Items() {
                 <img
                   src={item.image}
                   className="w-full h-50 md:h-55 lg:h-62.5 object-contain"
+                  alt={item.name}
                 />
 
                 <h2 className="text-center text-base md:text-lg">
@@ -135,7 +127,6 @@ export default function Items() {
 
                 <p className="text-blue-600 text-left text-lg md:text-xl font-bold">
                   {item.price}
-
                   <span className="text-gray-500 text-sm md:text-base font-normal px-1">
                     تومان
                   </span>
@@ -150,7 +141,11 @@ export default function Items() {
                 key={item.id}
                 className="h-35 md:h-40 lg:h-40 bg-white rounded-2xl p-2 flex gap-2 md:gap-5"
               >
-                <img src={item.image} className="w-24 md:w-30 object-contain" />
+                <img
+                  src={item.image}
+                  className="w-24 md:w-30 object-contain"
+                  alt={item.name}
+                />
 
                 <div className="flex flex-col gap-2 justify-center min-w-0">
                   <h3 className="text-xs md:text-sm">{item.name}</h3>
@@ -167,7 +162,6 @@ export default function Items() {
 
                   <p className="text-blue-600 text-lg md:text-xl mt-2 md:mt-4 font-bold">
                     {item.price}
-
                     <span className="text-gray-500 text-sm md:text-base font-normal px-1">
                       تومان
                     </span>
