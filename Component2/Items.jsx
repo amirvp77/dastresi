@@ -3,12 +3,11 @@ import { useEffect, useState } from "react";
 const API = "https://amirvp77.github.io/dastresi-db/db.json";
 
 export default function Items() {
-  
+
   const [Item, setItem] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  const [endTime, setEndTime] = useState(null);
   const [time, setTime] = useState(0);
 
   const getItem = async () => {
@@ -22,7 +21,6 @@ export default function Items() {
       const data = await res.json();
 
       setItem(data.items);
-      setEndTime(new Date(data.timerEndTime).getTime());
     } catch (err) {
       setError(true);
       console.log(err);
@@ -36,16 +34,23 @@ export default function Items() {
   }, []);
 
   useEffect(() => {
-    if (!endTime) return;
+    const updateTimer = () => {
+      const now = new Date();
+      const endTime = new Date(now);
 
-    const interval = setInterval(() => {
-      const remaining = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
+      endTime.setHours(24, 0, 0, 0);
+
+      const remaining = Math.floor((endTime.getTime() - now.getTime()) / 1000);
 
       setTime(remaining);
-    }, 1000);
+    };
+
+    updateTimer();
+
+    const interval = setInterval(updateTimer, 1000);
 
     return () => clearInterval(interval);
-  }, [endTime]);
+  }, []);
 
   const hours = Math.floor(time / 3600);
   const minutes = Math.floor((time % 3600) / 60);
