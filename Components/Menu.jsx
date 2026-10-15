@@ -46,7 +46,7 @@ export default function Menu({
               </div>
 
               {item.dropdown && (
-                <ul className="absolute top-[calc(100%+12px)] right-0 hidden group-hover:block w-55 bg-white shadow-[0_8px_25px_rgba(0,0,0,0.18)] z-[200]">
+                <ul className="absolute top-[calc(100%+12px)] right-0 hidden group-hover:block w-55 bg-white shadow-[0_8px_25px_rgba(0,0,0,0.18)] z-[200] before:content-[''] before:absolute before:bottom-full before:right-0 before:w-full before:h-3">
                   {item.dropdown.map((dropdownItem) => (
                     <li
                       key={dropdownItem.id}
